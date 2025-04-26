@@ -6,8 +6,8 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 // Dichiara la funzione qui.
 function iniziali (arrayNomi){
     let inizialiArray = []
-    for(let i = 0; i < names.length; i++){
-        curElement = names[i]
+    for(let i = 0; i < arrayNomi.length; i++){
+        curElement = arrayNomi[i]
         inizialiArray.push(curElement[0])
     }
     return inizialiArray
