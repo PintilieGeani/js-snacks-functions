@@ -7,7 +7,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 function iniziali (arrayNomi){
     let inizialiArray = []
     for(let i = 0; i < arrayNomi.length; i++){
-        curElement = arrayNomi[i]
+        let curElement = arrayNomi[i]
         inizialiArray.push(curElement[0])
     }
     return inizialiArray

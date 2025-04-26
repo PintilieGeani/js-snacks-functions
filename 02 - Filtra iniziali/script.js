@@ -6,9 +6,9 @@ const lettera = "a"
 // Dichiara la funzione qui.
 function filter (namesArray, letter){
     let filtrato = []
-    letterUpper = letter.toUpperCase()
+    let letterUpper = letter.toUpperCase()
     for(let i = 0; i < namesArray.length; i++){
-        curElement = namesArray[i]
+        let curElement = namesArray[i]
         if(curElement[0] === letterUpper){
             filtrato.push(curElement)
         }
