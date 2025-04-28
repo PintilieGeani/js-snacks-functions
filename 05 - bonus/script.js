@@ -15,17 +15,19 @@ function saluta (nome){
     let saluto = ""
     if(ora <= 13){
         saluto = `Buongiorno, ${nome}`
-    }if(ora > 13){
+    }
+    if(ora > 13 && ora <= 17){
         saluto = `Buon pomeriggio, ${nome}`
-    } else {
+    } if(ora > 17) {
         saluto = `Buonasera, ${nome}`
     }
     return saluto
 } 
 
 // Invoca la funzione qui e stampa il risultato in console
-
+const data = new Date
 const result = saluta(name)
 console.log(result)
+console.log(data.getHours())
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
